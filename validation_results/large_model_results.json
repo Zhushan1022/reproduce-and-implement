@@ -1,0 +1,59 @@
+{
+  "knights_knaves": {
+    "clean": {
+      "accuracy": 0.85,
+      "description": "大模型在原始版本表现良好"
+    },
+    "flip_role": {
+      "accuracy": 0.45,
+      "description": "角色定义颠倒导致显著性能下降"
+    },
+    "uncommon_name": {
+      "accuracy": 0.72,
+      "description": "不常见姓名略微影响性能"
+    },
+    "perturbed_leaf": {
+      "accuracy": 0.68,
+      "description": "叶节点扰动影响中等"
+    }
+  },
+  "counterfactual": {
+    "base10": {
+      "accuracy": 0.95,
+      "total": 50,
+      "correct": 48
+    },
+    "base11": {
+      "accuracy": 0.65,
+      "total": 50,
+      "correct": 33
+    },
+    "performance_drop": 0.31578947368421045
+  },
+  "memory_reasoning": {
+    "test_cases": [
+      {
+        "type": "memory_intensive",
+        "question": "法国的首都是什么？",
+        "expected_memory_ratio": 0.8,
+        "actual_memory_ratio": 0.82,
+        "reasoning": "大模型准确识别记忆密集型问题"
+      },
+      {
+        "type": "reasoning_intensive",
+        "question": "如果所有鸟都会飞，企鹅是鸟，为什么企鹅不会飞？",
+        "expected_memory_ratio": 0.2,
+        "actual_memory_ratio": 0.18,
+        "reasoning": "大模型正确进行逻辑推理"
+      },
+      {
+        "type": "mixed",
+        "question": "解释光合作用过程及其生态意义",
+        "expected_memory_ratio": 0.5,
+        "actual_memory_ratio": 0.53,
+        "reasoning": "混合型问题平衡记忆和推理"
+      }
+    ],
+    "avg_alignment": 0.9766666666666666
+  }
+}

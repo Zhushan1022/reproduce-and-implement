@@ -1,0 +1,16 @@
+{
+  "counterfactual": {
+    "base10_accuracy": 0.85,
+    "base11_accuracy": 0.45,
+    "performance_drop": 0.47
+  },
+  "knights_knaves": {
+    "clean": 0.8,
+    "flip_role": 0.5,
+    "uncommon_name": 0.6
+  },
+  "memory_reasoning": {
+    "overall_memory_ratio": 0.53,
+    "overall_alignment": 0.93
+  }
+}
